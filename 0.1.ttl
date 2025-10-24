@@ -12,9 +12,18 @@
   dct:contributor "admin";
   dct:created "2025-10-24T17:57:34.135Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2025-10-24T17:57:34.135Z"^^xsd:dateTime;
+  dct:modified "2025-10-24T17:57:44.880Z"^^xsd:dateTime;
   dct:title "tstetstsstst"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace "http://ontologies.metaphacts.com/tstetstsstst/"^^xsd:anyURI;
   rdfs:label "tstetstsstst"@en;
   owl:versionInfo "0.1" .
+
+:Testxxx a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2025-10-24T17:57:44.880Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2025-10-24T17:57:44.880Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "testxxx"@en .
