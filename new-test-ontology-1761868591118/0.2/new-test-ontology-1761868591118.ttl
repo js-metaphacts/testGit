@@ -10,13 +10,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :0.2 a owl:Ontology;
+  <http://esdm.cba/ontology-bu-mapping/belongsTo> <https://vocabularies.metaphacts.com/business-units-vocabulary/25e35e65-d7bb-4e69-8cae-9e57b9a0d1e1>;
   <http://open-services.net/ns/core#modifiedBy> "admin";
-  dct:contributor "admin";
+  dct:contributor <http://www.metaphacts.com/resource/user/guest>, "admin";
   dct:created "2025-10-30T23:56:34.340Z"^^xsd:dateTime;
-  dct:creator "admin";
-  dct:modified "2025-11-27T18:55:27.755Z"^^xsd:dateTime;
+  dct:creator <http://www.metaphacts.com/resource/user/guest>, "admin";
+  dct:modified "2025-11-27T23:18:40.273Z"^^xsd:dateTime;
   dct:title "New test ontology 1761868591118"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
   vaem:namespace "http://ontologies.metaphacts.com/new-test-ontology-1761868591118/"^^xsd:anyURI;
   rdfs:label "New test ontology 1761868591118"@en;
   owl:priorVersion :0.1;
