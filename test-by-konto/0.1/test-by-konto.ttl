@@ -1,0 +1,22 @@
+@prefix : <https://esdm.cba/test-by-konto/> .
+@prefix application: <http://ontologies.metaphacts.com/application-ontology/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  application:belongsTo <https://vocabularies.metaphacts.com/business-units-vocabulary/6e2f4da4-65f6-4ead-9136-e1df9db8ded8>;
+  <http://open-services.net/ns/core#modifiedBy> "konto";
+  dct:contributor "konto";
+  dct:created "2025-12-02T21:49:39.005Z"^^xsd:dateTime;
+  dct:creator "konto";
+  dct:modified "2025-12-02T21:49:39.005Z"^^xsd:dateTime;
+  dct:title "Test by  Konto"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace "https://esdm.cba/test-by-konto/"^^xsd:anyURI;
+  rdfs:label "Test by  Konto"@en;
+  owl:versionInfo "0.1" .
