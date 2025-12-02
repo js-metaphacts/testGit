@@ -1,0 +1,22 @@
+@prefix : <https://esdm.cba/new-onto-by-onto/> .
+@prefix application: <http://ontologies.metaphacts.com/application-ontology/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  application:belongsTo <https://vocabularies.metaphacts.com/business-units-vocabulary/9dd34247-46be-48a7-bf57-5487164df7e8>;
+  <http://open-services.net/ns/core#modifiedBy> "onto";
+  dct:contributor "onto";
+  dct:created "2025-12-02T23:46:38.473Z"^^xsd:dateTime;
+  dct:creator "onto";
+  dct:modified "2025-12-02T23:46:38.473Z"^^xsd:dateTime;
+  dct:title "New onto by onto"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace "https://esdm.cba/new-onto-by-onto/"^^xsd:anyURI;
+  rdfs:label "New onto by onto"@en;
+  owl:versionInfo "0.1" .
