@@ -1,0 +1,22 @@
+@prefix : <https://esdm.cba/testing-without-owner/> .
+@prefix application: <http://ontologies.metaphacts.com/application-ontology/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:0.1 a owl:Ontology;
+  application:belongsTo <https://vocabularies.metaphacts.com/business-units-vocabulary/6e2f4da4-65f6-4ead-9136-e1df9db8ded8>;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2025-12-02T21:40:55.445Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2025-12-02T21:40:55.445Z"^^xsd:dateTime;
+  dct:title "Testing without owner"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace "https://esdm.cba/testing-without-owner/"^^xsd:anyURI;
+  rdfs:label "Testing without owner"@en;
+  owl:versionInfo "0.1" .
