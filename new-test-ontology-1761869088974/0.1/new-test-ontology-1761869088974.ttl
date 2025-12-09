@@ -4,7 +4,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :0.1 a owl:Ontology;
@@ -12,9 +11,69 @@
   dct:contributor "admin";
   dct:created "2025-10-31T00:04:52.024Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2025-10-31T00:04:52.024Z"^^xsd:dateTime;
+  dct:modified "2025-11-21T16:38:19.624Z"^^xsd:dateTime;
   dct:title "New test ontology 1761869088974"@en;
-  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
-  vaem:namespace "http://ontologies.metaphacts.com/new-test-ontology-1761869088974/"^^xsd:anyURI;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/published>;
+  <http://www.linkedmodel.org/1.2/schema/vaem#namespace> "http://ontologies.metaphacts.com/new-test-ontology-1761869088974/"^^xsd:anyURI;
   rdfs:label "New test ontology 1761869088974"@en;
   owl:versionInfo "0.1" .
+
+:NewClass1 a owl:Class;
+  <http://esdm.cba/owl-ontology-status-mapping/decommissionDate> "2025-11-27"^^xsd:date;
+  <http://esdm.cba/owl-ontology-status-mapping/hasStatus> true;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2025-11-19T22:33:47.441Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2025-11-19T22:34:33.239Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "New class1"@en .
+
+:NewClass1Shape a sh:NodeShape;
+  sh:property [
+      sh:datatype xsd:string;
+      sh:path :attribute1
+    ], [
+      sh:class :NewClass2;
+      sh:path :newRelation1
+    ];
+  sh:targetClass :NewClass1 .
+
+:NewClass2 a owl:Class;
+  <http://esdm.cba/owl-ontology-status-mapping/hasStatus> false;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2025-11-19T22:34:25.388Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2025-11-21T16:38:19.624Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "New class2"@en .
+
+:NewClass2Shape a sh:NodeShape;
+  sh:property [
+      sh:datatype xsd:string;
+      sh:path dct:alternative
+    ];
+  sh:targetClass :NewClass2 .
+
+:attribute1 a owl:DatatypeProperty;
+  <http://esdm.cba/owl-ontology-status-mapping/decommissionDate> "2025-11-20"^^xsd:date;
+  <http://esdm.cba/owl-ontology-status-mapping/hasStatus> true;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2025-11-19T22:34:02.283Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2025-11-19T22:34:02.283Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "Attribute 1"@en .
+
+:newRelation1 a owl:ObjectProperty;
+  <http://esdm.cba/owl-ontology-status-mapping/decommissionDate> "2025-11-20"^^xsd:date;
+  <http://esdm.cba/owl-ontology-status-mapping/hasStatus> true;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2025-11-19T22:34:25.388Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2025-11-19T22:34:25.388Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "New relation 1"@en .
