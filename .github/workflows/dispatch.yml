@@ -1,0 +1,12 @@
+name: Dummy Dispatch Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  dummy-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "This is a dummy workflow triggered manually 🚀"
