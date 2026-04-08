@@ -14,7 +14,8 @@ jobs:
         run: |
           # Resolve the latest app version from S3 using version-aware sort.
           CURRENT_VERSION="1.1"
-
+          echo "Environment var ${{vars.ENVIRONMENT_VAR}}"
+          
           if [ -z "$CURRENT_VERSION" ]; then
             echo "Error: No existing versions found in S3 bucket."
             exit 1
