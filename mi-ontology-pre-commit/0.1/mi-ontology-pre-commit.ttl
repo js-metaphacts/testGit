@@ -13,9 +13,18 @@
   dct:contributor "admin";
   dct:created "2026-06-02T22:36:08.549Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-06-02T22:36:08.549Z"^^xsd:dateTime;
+  dct:modified "2026-06-02T22:36:23.652Z"^^xsd:dateTime;
   dct:title "MiOntologyPre-Commit"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace "http://ontologies.metaphacts.com/mi-ontology-pre-commit/"^^xsd:anyURI;
   rdfs:label "MiOntologyPre-Commit"@en;
   owl:versionInfo "0.1" .
+
+<http://ontologies.metaphacts.com/mi-ontology-pre-commit/Class1> a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-06-02T22:36:22.146Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-06-02T22:36:22.146Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/mi-ontology-pre-commit/0.1>;
+  rdfs:label "Class1"@en .
