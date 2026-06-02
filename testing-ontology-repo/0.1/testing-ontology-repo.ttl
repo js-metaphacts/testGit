@@ -11,7 +11,7 @@
   dct:contributor "admin";
   dct:created "2026-06-02T18:50:49.685Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-06-02T19:02:51.637Z"^^xsd:dateTime;
+  dct:modified "2026-06-02T19:07:16.065Z"^^xsd:dateTime;
   dct:title "Testing ontology repo"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   <http://www.linkedmodel.org/1.2/schema/vaem#namespace> "http://ontologies.metaphacts.com/testing-ontology-repo/"^^xsd:anyURI;
@@ -32,6 +32,22 @@
   dct:contributor "admin";
   dct:created "2026-06-02T19:04:24.980Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-06-02T19:04:24.980Z"^^xsd:dateTime;
+  dct:modified "2026-06-02T19:08:52.464Z"^^xsd:dateTime;
   rdfs:isDefinedBy :0.1;
   rdfs:label "class2"@en .
+
+:Class2Shape a sh:NodeShape;
+  sh:property [
+      sh:class :Class1;
+      sh:path :newRelationCustom
+    ];
+  sh:targetClass :Class2 .
+
+:newRelationCustom a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-06-02T19:08:52.459Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-06-02T19:08:52.459Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "NewRelationCustom"@en .
