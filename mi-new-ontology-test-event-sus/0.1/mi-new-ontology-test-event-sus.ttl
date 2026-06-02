@@ -12,9 +12,18 @@
   dct:contributor "admin";
   dct:created "2026-06-02T19:08:18.955Z"^^xsd:dateTime;
   dct:creator "admin";
-  dct:modified "2026-06-02T19:08:18.955Z"^^xsd:dateTime;
+  dct:modified "2026-06-02T19:10:17.841Z"^^xsd:dateTime;
   dct:title "MiNewOntologyTestEventSus"@en;
   <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
   vaem:namespace "http://ontologies.metaphacts.com/mi-new-ontology-test-event-sus/"^^xsd:anyURI;
   rdfs:label "MiNewOntologyTestEventSus"@en;
   owl:versionInfo "0.1" .
+
+:NewClassOntoCreated a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-06-02T19:11:53.880Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-06-02T19:11:53.880Z"^^xsd:dateTime;
+  rdfs:isDefinedBy :0.1;
+  rdfs:label "NewClassOntoCreated"@en .
