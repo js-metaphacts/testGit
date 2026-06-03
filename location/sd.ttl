@@ -1,0 +1,48 @@
+# baseURI: http://ontologies.metaphacts.com/new-test-ontology/0.1
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix vaem: <http://www.linkedmodel.org/1.2/schema/vaem#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ontologies.metaphacts.com/new-test-ontology/0.1> a owl:Ontology;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-02-25T22:56:47.817Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-03-17T00:32:30.888Z"^^xsd:dateTime;
+  dct:title "New  test ontology"@en;
+  <http://purl.org/ontology/bibo/status> <http://purl.org/spar/pso/draft>;
+  vaem:namespace "http://ontologies.metaphacts.com/new-test-ontology/"^^xsd:anyURI;
+  rdfs:label "New  test ontology"@en;
+  owl:versionInfo "0.1" .
+
+<http://ontologies.metaphacts.com/new-test-ontology/Class1> a owl:Class;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-02-25T22:57:06.111Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-02-25T22:57:06.111Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/new-test-ontology/0.1>;
+  rdfs:label "Class 1"@en .
+
+<http://ontologies.metaphacts.com/new-test-ontology/newAttribute> a owl:DatatypeProperty;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-03-17T00:29:03.731Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-03-17T00:29:03.731Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/new-test-ontology/0.1>;
+  rdfs:label "New attribute"@en .
+
+<http://ontologies.metaphacts.com/new-test-ontology/newRelation> a owl:ObjectProperty;
+  <http://open-services.net/ns/core#modifiedBy> "admin";
+  dct:contributor "admin";
+  dct:created "2026-03-17T00:29:03.731Z"^^xsd:dateTime;
+  dct:creator "admin";
+  dct:modified "2026-03-17T00:32:30.888Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <http://ontologies.metaphacts.com/new-test-ontology/0.1>;
+  rdfs:label "New relation "@en .
